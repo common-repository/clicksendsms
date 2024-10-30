@@ -1,0 +1,57 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+ .cs_setting_wrapper{
+    padding: 10px;
+ }
+ .cs_setting_wrapper a {
+    text-decoration: none;
+  }
+.cs_setting_info p{
+    margin-left: 0.8rem;
+}
+ .cs_setting_header{
+     display: flex;
+     width: 100%;
+ }
+ .cs_setting_header h4{
+    margin: 0.33em 0;
+    font-weight: 700;
+ }
+ .cs_setting_header p{
+    float: right;
+    margin:0;
+    margin-right: 4rem;
+ }
+ .cs_setting_wrapper .form-group{
+     margin-bottom: 1rem;
+    display: flex;
+ }
+ .cs_setting_opt{
+     padding: 10px;
+ }
+.cs_setting_wrapper .col_sm{
+    width: 15%;
+}
+.cs_setting_wrapper .col_md{
+    width: 50%;
+}
+.cs_setting_opt input[type=text], .cs_setting_opt select{
+    width: 99%;
+    max-width: 99%!important;
+}
+.cs_setting_wrapper button{
+    background-color: #7ebdfe;
+    padding: 5px;
+    cursor: pointer;
+}
+.cs_setting_wrapper .hidden{
+    display: none;
+}
+.cs_setting_wrapper .help-block{
+    color: red;
+}
+.cs_setting_opt p{
+    margin: 0;
+}

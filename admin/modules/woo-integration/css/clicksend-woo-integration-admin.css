@@ -1,0 +1,56 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+ .cs_woo_setting_info{
+    padding: 10px;
+    width: 100%;
+    background-color: #e8e8e8;
+    margin-top: 12px;
+ }
+ .cs_woo_setting_wrapper a {
+    text-decoration: none;
+  }
+
+ .cs_woo_setting_info h4{
+    margin: 0.33em 0;
+    font-weight: 700;
+ }
+ .cs_woo_setting_status .col_xs{
+     width: 20%;
+ }
+ .cs_woo_setting_status .col_md{
+    width: 50%;
+}
+.cs_woo_setting_status{
+    background-color: #e8e8e8;
+    margin-top: 1rem;
+    padding: 10px;
+    width: 95%;
+    margin-left: 7px;
+}
+.cs_woo_setting_status .status_body_title{
+    display: flex;
+    margin-top: 2rem;
+}
+.cs_woo_setting_status .status_header{
+    display: flex;
+}
+.cs_woo_setting_status .status_field{
+    display: flex;
+    margin-top: 1rem;
+}
+.cs_woo_setting_status textarea{
+    width: 80%;
+}
+.cs_woo_setting_status input[type=checkbox]{
+    margin: auto;
+}
+.cs_woo_setting_status button{
+    background-color: #7ebdfe;
+    padding: 5px;
+    cursor: pointer;
+}
+.cs_woo_setting_status.status_body.hidden{
+    display: none;
+}

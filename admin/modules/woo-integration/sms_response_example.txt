@@ -1,0 +1,155 @@
+#Issue 1:
+
+URL - https://rest.clicksend.com/v3/sms/send
+
+Payload
+
+{
+  "messages": [
+    {
+      "body":"test message, please ignore",
+      "to": "+61-7835851114",
+      "from": "sdfsdfsdfs alsdfjk dlksafj lkjfklsjlflka"
+    }
+  ]
+}
+
+Response
+
+1. I'm getting "status": "INVALID_RECIPIENT" but this is related to sender
+
+{
+    "http_code": 200,
+    "response_code": "SUCCESS",
+    "response_msg": "Messages queued for delivery.",
+    "data": {
+        "total_price": 0,
+        "total_count": 1,
+        "queued_count": 0,
+        "messages": [
+            {
+                "to": "+617835851114",
+                "body": "test message, please ignore",
+                "from": "sdfsdfsdfs alsdfjk dlksafj lkjfklsjlflka",
+                "schedule": "",
+                "message_id": "4B89F1C6-1DF3-4B1A-8C64-9D1C0A0CE039",
+                "custom_string": "",
+                "status": "INVALID_RECIPIENT"
+            }
+        ],
+        "_currency": {
+            "currency_name_short": "INR",
+            "currency_prefix_d": "₹",
+            "currency_prefix_c": "¢",
+            "currency_name_long": "Indian Rupees"
+        }
+    }
+}
+
+
+#Issue 2:
+
+URL - https://rest.clicksend.com/v3/sms/send
+
+Payload
+
+{
+    "messages": [
+      {
+        "body":"test message, please ignore",
+        "to": "+91-7835851114",
+        "from": "sdfsdfsdfs alsdfjk dlksafj lkjfklsjlflka"
+      }
+    ]
+  } 
+
+Response
+
+1. Now I'm getting "status": "INVALID_SENDER_ID" 
+
+{
+    "http_code": 200,
+    "response_code": "SUCCESS",
+    "response_msg": "Messages queued for delivery.",
+    "data": {
+        "total_price": 0.044,
+        "total_count": 1,
+        "queued_count": 0,
+        "messages": [
+            {
+                "to": "+917835851114",
+                "body": "test message, please ignore",
+                "from": "+61447254068",
+                "schedule": "",
+                "message_id": "7B5C718E-7A2F-4407-8BAA-083A156E2DC7",
+                "message_price": "0.0440",
+                "custom_string": "",
+                "country": "IN",
+                "carrier": "Idea",
+                "status": "INVALID_SENDER_ID"
+            }
+        ],
+        "_currency": {
+            "currency_name_short": "INR",
+            "currency_prefix_d": "₹",
+            "currency_prefix_c": "¢",
+            "currency_name_long": "Indian Rupees"
+        }
+    }
+}
+
+
+Case 3: 
+
+Payload 
+{
+    "messages": [
+      {
+        "body":"test message, please ignore",
+        "to": "+91-7835851114",
+        "from": ""
+      }
+    ]
+  } 
+
+
+Success case
+
+{
+    "http_code": 200,
+    "response_code": "SUCCESS",
+    "response_msg": "Messages queued for delivery.",
+    "data": {
+        "total_price": 2.3523,
+        "total_count": 1,
+        "queued_count": 1,
+        "messages": [
+            {
+                "direction": "out",
+                "date": 1643026131,
+                "to": "+917835851114",
+                "body": "test message, please ignore",
+                "from": "+61447254068",
+                "schedule": 1643026131,
+                "message_id": "D0211760-26DD-4D40-8930-3ACDBFF41B40",
+                "message_parts": 1,
+                "message_price": "2.3523",
+                "from_email": null,
+                "list_id": null,
+                "custom_string": "",
+                "contact_id": null,
+                "user_id": 293224,
+                "subaccount_id": 333097,
+                "country": "IN",
+                "carrier": "Idea",
+                "status": "SUCCESS"
+            }
+        ],
+        "_currency": {
+            "currency_name_short": "INR",
+            "currency_prefix_d": "₹",
+            "currency_prefix_c": "¢",
+            "currency_name_long": "Indian Rupees"
+        }
+    }
+}

@@ -1,0 +1,222 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+ .cs_woo__sms-templates-info > p:not(.cs_woo__sms-temp-warn) {
+    margin: 0;
+}
+.cs_woo__sms-temp-warn {
+    margin-top: 0px ;
+}
+.cs_woo__sms-templates--section{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px 0px;
+}
+.cs_woo__sms-templates--item {
+    display: flex;
+    justify-content: center;
+    /*align-items: center;*/
+    gap: 5%;
+    padding: 10px 0px;
+    width: 95%;
+}
+
+.cs_woo__sms-templates--section label {
+    display: flex;
+    flex-direction: column;
+}
+.cs_woo__sms-templates--section label span:not(.instructions), .cs_woo__sms-templates--actions > span.label-name{
+    font-weight: bold;
+}
+
+.cs_woo__sms-templates--body {
+    width: 50%;
+   min-height: 136px;
+}
+.cs_woo__sms-templates--body label, .cswt__body-input{
+    height: 100%;
+}
+.cswt__body-input, .cswt__name-input {
+   box-shadow: 0 0 0 transparent;
+   border-radius: 4px;
+   border: 1px solid #8c8f94;
+   background-color: #fff;
+   color: #2c3338;   
+}
+
+.cswt__body-input:focus,
+.cswt__body-input:focus-visible,
+.cswt__name-input:focus,
+.cswt__name-input:focus-visible {
+   border-color: #2271b1;
+   box-shadow: 0 0 0 1px #2271b1;
+   outline: none !important;
+}
+
+.cs_woo__sms-templates--btn-group {	
+    position: relative;
+   /*display: -ms-inline-flexbox;*/
+   display: inline-flex;
+   vertical-align: middle;	
+}
+
+.cs_woo__sms-templates--btn-group>.cs_woo__sms-templates--btn:not(:last-child){
+    border-top-right-radius: 0;
+   border-bottom-right-radius: 0;
+}
+
+.cs_woo__sms-templates--btn-group>.cs_woo__sms-templates--btn:not(:first-child) {
+   border-top-left-radius: 0;
+   border-bottom-left-radius: 0;
+}
+
+.cs_woo__sms-templates--btn-group>.cs_woo__sms-templates--btn{
+    position: relative;
+   /*-ms-flex: 1 1 auto;*/
+   flex: 1 1 auto;
+}
+
+.cs_woo__sms-templates--btn {
+    display: inline-block;
+   font-weight: 400;
+   color: #fff;
+   text-align: center;
+   vertical-align: middle;
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+   background-color: transparent;
+   border: 1px solid transparent;
+   padding: 0.375rem 0.75rem;
+   font-size: 1rem;
+   line-height: 1.5;
+   border-radius: 0.25rem;
+   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+   border-radius: 5px;
+   font-size: 12px;
+   cursor: pointer;
+}
+
+.cs_woo__sms-templates--btn-info {
+   background-color: #06c2de;
+   border: 1px solid #06c2de;
+}
+.cs_woo__sms-templates--btn-info:hover {
+   background-color: #048093;
+   border: 1px solid #048093;
+}
+
+.cs_woo__sms-templates--btn-danger {
+   background-color: #e74c5e;
+   border: 1px solid #e74c5e;
+}
+
+.cs_woo__sms-templates--btn-danger:hover {
+   background-color: #991524;
+   border: 1px solid #991524;
+}
+
+.cs_woo__sms-templates--btn-success {
+   /*color: #fff;*/
+   background-color: #5cb85c;
+   border-color: #4cae4c;
+}
+
+.cs_woo__sms-templates--btn-success:hover {
+   background-color: #357935;
+   border-color: #357935;
+}
+
+.cs_woo__sms-templates--btn-primary {
+   /*color: #fff;*/
+   background-color: #337ab7;
+   border-color: #2e6da4;
+}
+
+.cs_woo__sms-templates--btn-primary:hover {
+   background-color: #214f76;
+   border-color: #214e76;
+}
+
+.cs_woo__sms-templates--btn-warning {
+   /*color: #fff;*/
+   background-color: #f0ad4e;
+   border-color: #eea236;
+}
+
+.cs_woo__sms-templates--btn-warning:hover {
+   background-color: #8b560c;
+   border-color: #8b560c;
+}
+
+.disabled {
+   display: none;
+}
+
+.cs_woo__sms-templates--name {
+   width: 22%;
+}
+
+.cs_woo__sms-templates--actions {
+   align-self: start;
+   margin-top: 9px;
+   width: 16%;
+}
+
+.save-template-btn {
+   width: fit-content;
+   /* text-align: center; */
+   margin: 0px auto;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 5px;
+}
+.add-template-btn {
+   width: fit-content;
+   /* text-align: center; */
+   /*margin: 0px auto;*/
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 5px;
+}
+.transform-down {
+   transform: translateY(5px);
+}
+
+.cs_woo__template-ctrl-btns {
+   display: flex;
+   align-items: center;
+   justify-content: start;
+   gap: 5px;
+   /* width: fit-content; */
+   /*margin: 5px auto;*/
+   width: 100%;
+}
+
+.cs_woo__template-ctrl-area {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 5px;
+   align-items: start;
+   margin: 5px auto;
+}
+
+.button-secondary {
+   color: #2271b1;
+   border-color: #2271b1;
+   background: #f6f7f7;
+   vertical-align: top;
+}
+
+div#preload-msg {
+   /* margin: 0px; */
+   /* padding: 0px; */
+   transform: translateX(-5px);
+}

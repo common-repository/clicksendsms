@@ -1,0 +1,217 @@
+:root{
+    --animate-duration: 1s;
+    --animate-delay: 1s;
+    --animate-repeat: 1;
+}
+.preloader {
+    position: fixed;
+    /*left: 20px;*/
+    right: 20px;
+    padding: 14px 30px 14px 14px;
+    color: white;
+    z-index: 999999999999;
+    font-size: 17px;
+    border-radius: 4px;
+    -webkit-transition: bottom 0.3s ease;
+    -o-transition: bottom 0.3s ease;
+    transition: bottom 0.3s ease;
+    bottom: 35px;
+    max-width: calc(100% - 40px);
+    
+}
+.preloader .fa-times {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.preloader .fa-close {
+    line-height: 25px;
+}
+
+.animate__animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-duration: var(--animate-duration);
+    animation-duration: var(--animate-duration);
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+@-webkit-keyframes backInUp {
+    0% {
+        -webkit-transform: translateY(1200px) scale(0.7);
+        transform: translateY(1200px) scale(0.7);
+        opacity: 0.7;
+    }
+    80% {
+        -webkit-transform: translateY(0) scale(0.7);
+        transform: translateY(0) scale(0.7);
+        opacity: 0.7;
+    }
+    to {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+@keyframes backInUp {
+    0% {
+        -webkit-transform: translateY(1200px) scale(0.7);
+        transform: translateY(1200px) scale(0.7);
+        opacity: 0.7;
+    }
+    80% {
+        -webkit-transform: translateY(0) scale(0.7);
+        transform: translateY(0) scale(0.7);
+        opacity: 0.7;
+    }
+    to {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+.animate__backInUp {
+    -webkit-animation-name: backInUp;
+    animation-name: backInUp;
+}
+
+.err_desc , .alert-notification {
+    
+    padding: 5px 12px;
+    z-index: 9999;
+    border-radius: 6px;
+    font-size: 15px;
+    margin-bottom: 10px;
+    
+}
+.err_desc a, .alert-notification a{
+    text-decoration: underline;
+}
+.alert-notification {
+    border-radius: 0px;
+    text-align: center;
+}
+
+.err_desc p {
+    margin: 0 !important;
+    font-size: 15px;
+    
+}
+
+.p_info {
+    color: #00bcd4;
+}
+
+.p_danger {
+    color: #f44336;
+}
+
+.p_success {
+    color: #4caf50;
+}
+
+.p_danger, .p_info, .p_success {
+    font-weight: 600;
+}
+
+.hidden {
+    display: none;
+}
+
+.gly-spin {
+    -webkit-animation: spin 2s infinite linear;
+    -moz-animation: spin 2s infinite linear;
+    -o-animation: spin 2s infinite linear;
+    animation: spin 2s infinite linear
+}
+
+@-moz-keyframes spin {
+    0% {
+        -moz-transform: rotate(0)
+    }
+    100% {
+        -moz-transform: rotate(359deg)
+    }
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0)
+    }
+    100% {
+        -webkit-transform: rotate(359deg)
+    }
+}
+
+@-o-keyframes spin {
+    0% {
+        -o-transform: rotate(0)
+    }
+    100% {
+        -o-transform: rotate(359deg)
+    }
+}
+
+@keyframes spin {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0)
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg)
+    }
+}
+
+.gly-rotate-90 {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg)
+}
+
+.gly-rotate-180 {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg)
+}
+
+.gly-rotate-270 {
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    transform: rotate(270deg)
+}
+
+.gly-flip-horizontal {
+    -webkit-transform: scale(-1, 1);
+    -moz-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+    -o-transform: scale(-1, 1);
+    transform: scale(-1, 1)
+}
+
+.gly-flip-vertical {
+    -webkit-transform: scale(1, -1);
+    -moz-transform: scale(1, -1);
+    -ms-transform: scale(1, -1);
+    -o-transform: scale(1, -1);
+    transform: scale(1, -1)
+}
+
+@media(max-width:768px) {
+    .preloader {
+        top: initial;
+        bottom: 10px;
+        left: 10px;
+        right: 10px;
+        max-width: 100%;
+    }
+}

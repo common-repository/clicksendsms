@@ -1,0 +1,17 @@
+*** WooCommerce Extension Template Changelog ***  
+
+2023-05-22 - version 1.2.5
+* Modify - Bugs related to sending bulk sms fixed 
+
+2022-07-04 - version 1.2.2
+* New - Readme.txt added with details
+* Modify - Bug fixes reported by WordPress Team
+
+2022-04-18 - version 1.2.2
+* Modify - Changed the name of plugin
+
+2022-04-18 - version 1.2.1
+* New - Adding bulk sms functionality on order list screen
+
+2022-01-11 - version 1.0.0 
+* Initial release

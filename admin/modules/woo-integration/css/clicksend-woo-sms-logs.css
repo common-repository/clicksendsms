@@ -1,0 +1,90 @@
+.clicksend__logs-section {
+  overflow-y: auto;
+  height: 220px;
+	display: flex;
+	flex-direction: column;
+
+    resize: vertical;
+    overflow-y: scroll;
+    min-height: 220px;
+}
+
+.clicksend__logs-section::-webkit-scrollbar {
+  width: 5px;
+}
+.clicksend__logs-section::-webkit-scrollbar-track {
+  background: transparent; 
+}
+.clicksend__logs-section::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+.clicksend__logs-section::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+.clicksend__logs-section hr {
+	width: 90%;
+}
+.clicksend__logs-section .log_error{
+  background-color: #ff00002e;
+}
+/* .clicksend__logs-section .log_succ{
+  background-color: #4caf5559;
+} */
+
+.clicksend__logs-section .clicksend__log-remarks{
+  font-weight: 500;
+}
+
+.clicksend_no-content-text{
+	text-align: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background: #ecf0f1;
+    align-items: center;
+    border-radius: 4px;
+}
+.clicksend__logs-item {
+	padding: 10px;
+    margin: 10px 0px;
+    border-radius: 4px;
+    background: #ecf0f1;
+}
+.cs_help_block{
+  color: white!important;
+}
+.clicksend__log-date {
+    font-size: 12px;
+}
+.clicksend_template_selection_wrapper textarea{
+  width: 100%;
+}
+.clicksend_template_selection_wrapper h4 , .clicksend_template_selection_wrapper p{
+  margin: 0.33em 0;
+}
+.clicksend_template_selection_wrapper .action_btn_wrapper{
+  display: flex;
+}
+.clicksend_template_selection_wrapper .action_btn_wrapper select{
+  width: 70%;
+}
+.clicksend_template_selection_wrapper .action_btn_wrapper button{
+  width: 30%;
+}
+.clicksend_template_selection_wrapper .err_desc{
+  margin-top: 10px;
+}
+.clicksend_template_selection_wrapper #cs_sms_info{
+  display: none;
+}
+.clicksend_template_selection_wrapper .woocommerce-help-tip{
+  margin: 0 !important;
+}
+.clicksend_template_selection_wrapper #cs_help{
+  margin-left: 14px;
+  font-weight: 800;
+  font-size: 16px;
+  color: #5387d4;
+  cursor: pointer;
+}

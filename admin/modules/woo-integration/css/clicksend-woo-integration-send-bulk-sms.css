@@ -1,0 +1,64 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+/* .clicksend_bulk_order_container table,
+ .clicksend_bulk_order_container th,
+ .clicksend_bulk_order_container td {
+  border: 1px solid black;
+} */
+.clicksend_bulk_order_container {
+    display: flex;
+  }
+  .clicksend_bulk_order_container #bulkSmsForm
+     {
+    width: 30%;
+    padding: 1rem;
+    padding-left: 0;
+  }
+  .clicksend_bulk_order_container .widefat {
+    border: 1px solid #c3c4c7;
+    box-shadow: 0 1px 1px rgb(0 0 0 / 4%);
+    border-spacing: 0;
+    width: 100%;
+    clear: both;
+    margin: 0;
+  }
+  .clicksend_bulk_order_container .bulk_send_sms_table_wrapper {
+    width: 70%;
+    padding: 1rem;
+  }
+  .clicksend_bulk_order_container #cs_final_sms_body {
+    width: 100%;
+  }
+  .clicksend_bulk_order_container #cs_template_opt {
+    width: 70%;
+  }
+  .clicksend_bulk_order_container .button {
+    width: 28%;
+    margin-top: 1rem;
+  }
+  .clicksend_bulk_order_container table {
+    width: 100%;
+    text-align: left;
+  }
+  
+  .clicksend_bulk_order_container .tableFixHead {
+    overflow-y: auto;
+    height: 62%;
+  }
+  .clicksend_bulk_order_container .tableFixHead thead th {
+    position: sticky;
+    top: 0;
+  }
+  .clicksend_bulk_order_container table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  .clicksend_bulk_order_container th,
+  .clicksend_bulk_order_container td {
+    padding: 8px 16px;
+  }
+  .clicksend_bulk_order_container th {
+    background: #eee;
+  }
